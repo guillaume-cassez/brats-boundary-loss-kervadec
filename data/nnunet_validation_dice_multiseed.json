@@ -1,0 +1,131 @@
+{
+  "genere_le": "2026-09-22T22:24:17+00:00",
+  "generateur": "scripts/paper2_export_nnunet_dice.py",
+  "source": "dernière ligne « Mean Validation Dice » des logs d'entraînement nnU-Net v2 (fold 0, 300 époques, plan nnUNetPlans_96GB_mednext, MedNeXt-B)",
+  "n_graines": 3,
+  "folds": [
+    0
+  ],
+  "metrique": "Dice de validation nnU-Net (voxel-wise, régions fusionnées) — PAS la métrique officielle BraTS : c'est le pseudo-Dice que nnU-Net écrit en fin d'entraînement, cité comme tel dans la §4.4",
+  "mesures_par_run": {
+    "baseline_seed1": {
+      "bras": "baseline",
+      "graine": 1,
+      "trainer": "nnUNetTrainerMedNeXtBaseline",
+      "log": "nnunet_data/results_seed1/Dataset001_BraTS2023GLI/nnUNetTrainerMedNeXtBaseline__nnUNetPlans_96GB_mednext__3d_fullres/fold_0/training_log_2026_6_8_23_09_31.txt",
+      "nb_logs_du_dossier": 6,
+      "md5_log": "71b3623a3417d7311221179ccb096f35",
+      "octets_log": 93253,
+      "ligne_lue": "2026-06-09 02:53:02.597977: Mean Validation Dice:  0.9078326914923913",
+      "mean_validation_dice": 0.9078326914923913
+    },
+    "baseline_seed2": {
+      "bras": "baseline",
+      "graine": 2,
+      "trainer": "nnUNetTrainerMedNeXtBaseline",
+      "log": "nnunet_data/results_seed2/Dataset001_BraTS2023GLI/nnUNetTrainerMedNeXtBaseline__nnUNetPlans_96GB_mednext__3d_fullres/fold_0/training_log_2026_6_9_16_48_27.txt",
+      "nb_logs_du_dossier": 1,
+      "md5_log": "3c7742ccfaefded1acb91ce06726de99",
+      "octets_log": 190729,
+      "ligne_lue": "2026-06-10 03:22:27.589507: Mean Validation Dice:  0.906647162401573",
+      "mean_validation_dice": 0.906647162401573
+    },
+    "baseline_seed3": {
+      "bras": "baseline",
+      "graine": 3,
+      "trainer": "nnUNetTrainerMedNeXtBaseline",
+      "log": "nnunet_data/results_seed3/Dataset001_BraTS2023GLI/nnUNetTrainerMedNeXtBaseline__nnUNetPlans_96GB_mednext__3d_fullres/fold_0/training_log_2026_6_10_16_13_37.txt",
+      "nb_logs_du_dossier": 1,
+      "md5_log": "080db9f4849ee49c68441fe88ee63e82",
+      "octets_log": 191286,
+      "ligne_lue": "2026-06-11 04:05:07.898723: Mean Validation Dice:  0.9077670951373684",
+      "mean_validation_dice": 0.9077670951373684
+    },
+    "kervadec_seed1": {
+      "bras": "kervadec",
+      "graine": 1,
+      "trainer": "nnUNetTrainerMedNeXtKervadec",
+      "log": "nnunet_data/results_seed1/Dataset001_BraTS2023GLI/nnUNetTrainerMedNeXtKervadec__nnUNetPlans_96GB_mednext__3d_fullres/fold_0/training_log_2026_6_12_18_28_57.txt",
+      "nb_logs_du_dossier": 3,
+      "md5_log": "7246ea245db6ee5bfcabbc5730ff4b3b",
+      "octets_log": 155788,
+      "ligne_lue": "2026-06-13 02:37:33.377318: Mean Validation Dice:  0.906156184248634",
+      "mean_validation_dice": 0.906156184248634
+    },
+    "kervadec_seed2": {
+      "bras": "kervadec",
+      "graine": 2,
+      "trainer": "nnUNetTrainerMedNeXtKervadec",
+      "log": "nnunet_data/results_seed2/Dataset001_BraTS2023GLI/nnUNetTrainerMedNeXtKervadec__nnUNetPlans_96GB_mednext__3d_fullres/fold_0/training_log_2026_6_13_02_37_39.txt",
+      "nb_logs_du_dossier": 1,
+      "md5_log": "49a39e72c93cfd3a1f3104c2a5af2309",
+      "octets_log": 192531,
+      "ligne_lue": "2026-06-13 13:09:16.891498: Mean Validation Dice:  0.9077574402676793",
+      "mean_validation_dice": 0.9077574402676793
+    },
+    "kervadec_seed3": {
+      "bras": "kervadec",
+      "graine": 3,
+      "trainer": "nnUNetTrainerMedNeXtKervadec",
+      "log": "nnunet_data/results_seed3/Dataset001_BraTS2023GLI/nnUNetTrainerMedNeXtKervadec__nnUNetPlans_96GB_mednext__3d_fullres/fold_0/training_log_2026_6_13_13_09_21.txt",
+      "nb_logs_du_dossier": 1,
+      "md5_log": "23ef14c9fa41422736bc16df3362e160",
+      "octets_log": 192775,
+      "ligne_lue": "2026-06-13 23:42:41.379299: Mean Validation Dice:  0.9041725057170042",
+      "mean_validation_dice": 0.9041725057170042
+    }
+  },
+  "statistiques": {
+    "baseline": {
+      "per_seed": [
+        0.9078326914923913,
+        0.906647162401573,
+        0.9077670951373684
+      ],
+      "per_seed_arrondi4": [
+        0.9078,
+        0.9066,
+        0.9078
+      ],
+      "mean": 0.907415649677111,
+      "sd_ddof1": 0.0006663371818725676
+    },
+    "kervadec": {
+      "per_seed": [
+        0.906156184248634,
+        0.9077574402676793,
+        0.9041725057170042
+      ],
+      "per_seed_arrondi4": [
+        0.9062,
+        0.9078,
+        0.9042
+      ],
+      "mean": 0.9060287100777725,
+      "sd_ddof1": 0.001795863631051543
+    }
+  },
+  "test_t_plein_precision": {
+    "t": -1.015423,
+    "p": 0.416759,
+    "df": 2,
+    "methode": "test t apparié sur les 3 graines, valeurs pleine précision",
+    "conclusion": "non significatif : le résultat nul vs baseline tient"
+  },
+  "test_t_valeurs_arrondies": {
+    "t": -0.957826,
+    "p": 0.439228,
+    "df": 2,
+    "methode": "idem sur les valeurs arrondies à 4 décimales",
+    "note": "c'est le calcul d'origine du « t = 0.96, p = 0.44 » publié avant la v2.6 ; la v2.6 cite le calcul à pleine précision (t = 1.02, p = 0.42) et conserve celui-ci pour traçabilité"
+  },
+  "publie_avant_v2_6": {
+    "baseline_mean": 0.9074,
+    "baseline_sd": 0.0007,
+    "kervadec_mean": 0.9061,
+    "kervadec_sd": 0.0018,
+    "t": 0.96,
+    "p": 0.44
+  },
+  "note": "Aucune conclusion ne change : |t| ≈ 1 avec df = 2 reste très loin du seuil de significativité. L'écart porte sur la précision du calcul (entrée arrondie vs pleine précision), pas sur le résultat."
+}

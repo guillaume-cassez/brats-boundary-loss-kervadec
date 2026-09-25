@@ -1,0 +1,79 @@
+cff-version: 1.2.0
+message: >-
+  If you use this work, please cite the preprint listed under
+  "preferred-citation" below.
+title: >-
+  Precision Pays: A Fixed-Weight Boundary Loss Anchors the Precision End of a Recall–Precision Axis and Wins as the Consensus Veto under the Official BraTS-2023 Metrics
+abstract: >-
+  Reproducibility archive for Paper 2 of the BRATS auxiliary-loss program.
+  Does the Kervadec boundary loss (fixed weight lambda = 0.05, no auxiliary
+  head) added to a strong MedNeXt/nnU-Net glioma backbone improve adult
+  glioma segmentation? Under the complete official BraTS-2023 metric set over
+  a 5-fold cross-validation on the 1196-case study set (1251 unified cases
+  downloaded; the 55 exclusions are measured and listed case by case in
+  analysis/DATASET_EXCLUSIONS.md) the answer is no: a transparently reported
+  negative result, no significant gain over the baseline on any official
+  metric. Its robust distinctive property is being the precision-oriented
+  mirror of a signed-distance auxiliary head, which makes it an effective
+  connected-component consensus veto. The archive bundles the manuscript
+  (EN + FR with both PDFs), the reproducibility code, the exact result JSONs,
+  tables, figures, the dataset-provenance artefacts and the references.
+type: dataset
+version: v2.6
+date-released: "2026-09-22"
+license: CC-BY-4.0
+doi: 10.5281/zenodo.22906446
+authors:
+  - family-names: Cassez
+    given-names: Guillaume
+    affiliation: Independent researcher
+    email: cassez.guillaume@gmail.com
+    orcid: "https://orcid.org/0009-0007-0987-3931"
+  - family-names: Larnier
+    given-names: Stanislas
+    affiliation: Independent researcher
+    email: stanislaslarnier@gmail.com
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22906446
+    description: Concept DOI (resolves to every version)
+  - type: doi
+    value: 10.5281/zenodo.22906447
+    description: Version DOI of this exact revision
+keywords:
+  - brain tumor segmentation
+  - BraTS 2023
+  - glioma
+  - boundary loss
+  - Kervadec boundary loss
+  - signed distance transform
+  - auxiliary loss
+  - MedNeXt
+  - nnU-Net
+  - lesion-wise metrics
+  - HD95
+  - connected-component consensus
+  - negative result
+  - dataset provenance
+  - reproducibility
+  - magnetic resonance imaging
+preferred-citation:
+  type: article
+  title: >-
+    Precision Pays: A Fixed-Weight Boundary Loss Anchors the Precision End of a Recall–Precision Axis and Wins as the Consensus Veto under the Official BraTS-2023 Metrics
+  authors:
+    - family-names: Cassez
+      given-names: Guillaume
+      affiliation: Independent researcher
+      orcid: "https://orcid.org/0009-0007-0987-3931"
+    - family-names: Larnier
+      given-names: Stanislas
+      affiliation: Independent researcher
+  year: 2026
+  month: 9
+  notes: >-
+    Preprint, self-deposited on Zenodo under CC-BY-4.0. Companion Paper 1
+    (DistMap / signed-distance auxiliary loss) studies the recall end of the
+    same recall-precision axis; its Zenodo concept DOI is
+    10.5281/zenodo.19695263.
+  doi: 10.5281/zenodo.22906446

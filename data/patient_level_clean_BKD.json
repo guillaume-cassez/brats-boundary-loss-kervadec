@@ -1,0 +1,137 @@
+{
+  "genere_le": "2026-09-22T22:08:01+00:00",
+  "generateur": "scripts/paper2_export_patient_level.py",
+  "regime": "clean",
+  "bras": {
+    "B": "Baseline (MedNeXt, Dice+CE)",
+    "K": "+ loss de frontière de Kervadec (λ = 0.05)",
+    "D": "+ tête auxiliaire SDT (DistMap)"
+  },
+  "metrique": "Dice lesion-wise officiel BraTS-2023, moyenne des 3 régions (WT, TC, ET)",
+  "n_patients": 1196,
+  "folds": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "partition_disjointe": true,
+  "comptes": {
+    "kervadec_bat_baseline_et_distmap": {
+      "bras_gagnant": "K",
+      "n": 415,
+      "pct": 34.7,
+      "total": 1196
+    },
+    "baseline_bat_kervadec_et_distmap": {
+      "bras_gagnant": "B",
+      "n": 346,
+      "pct": 28.9,
+      "total": 1196
+    },
+    "distmap_bat_baseline_et_kervadec": {
+      "bras_gagnant": "D",
+      "n": 433,
+      "pct": 36.2,
+      "total": 1196
+    }
+  },
+  "cas_epingles": {
+    "P2A": {
+      "patient_id": "BraTS-GLI-01486-000",
+      "fold": "1",
+      "legende": "Figure 3 — Kervadec rescues",
+      "lw_dice_moyen_3_regions": {
+        "B": 0.526,
+        "K": 0.822,
+        "D": 0.324
+      },
+      "ordre": "K > B > D",
+      "fold_mesure": "1",
+      "compte_associe": {
+        "cle": "kervadec_bat_baseline_et_distmap",
+        "bras_gagnant": "K",
+        "n": 415,
+        "pct": 34.7,
+        "total": 1196
+      }
+    },
+    "P2B": {
+      "patient_id": "BraTS-GLI-00732-001",
+      "fold": "4",
+      "legende": "Figure 4 — Kervadec fails",
+      "lw_dice_moyen_3_regions": {
+        "B": 0.897,
+        "K": 0.476,
+        "D": 0.473
+      },
+      "ordre": "B > K > D",
+      "fold_mesure": "4",
+      "compte_associe": {
+        "cle": "baseline_bat_kervadec_et_distmap",
+        "bras_gagnant": "B",
+        "n": 346,
+        "pct": 28.9,
+        "total": 1196
+      }
+    },
+    "P2C": {
+      "patient_id": "BraTS-GLI-00525-000",
+      "fold": "4",
+      "legende": "Figure 5 — DistMap rescues",
+      "lw_dice_moyen_3_regions": {
+        "B": 0.623,
+        "K": 0.698,
+        "D": 0.905
+      },
+      "ordre": "D > K > B",
+      "fold_mesure": "4",
+      "compte_associe": {
+        "cle": "distmap_bat_baseline_et_kervadec",
+        "bras_gagnant": "D",
+        "n": 433,
+        "pct": 36.2,
+        "total": 1196
+      }
+    }
+  },
+  "provenance": [
+    {
+      "fichier": "outputs/consensus/per_patient_fold0_B_D_K_G.csv",
+      "md5": "ec442c2ef3c70807b462b41bde541edb",
+      "octets": 4317368,
+      "modifie_le": "2026-08-21T23:23:36",
+      "lignes_utiles": 2160
+    },
+    {
+      "fichier": "outputs/consensus/per_patient_fold1_B_D_K_G.csv",
+      "md5": "af9303cf16e9482a0b8230b2ed16841c",
+      "octets": 4301976,
+      "modifie_le": "2026-08-21T15:30:54",
+      "lignes_utiles": 2151
+    },
+    {
+      "fichier": "outputs/consensus/per_patient_fold2_B_D_K_G.csv",
+      "md5": "0dfc43f090048698c6ee52d5447d1d3a",
+      "octets": 4304633,
+      "modifie_le": "2026-08-21T17:37:06",
+      "lignes_utiles": 2151
+    },
+    {
+      "fichier": "outputs/consensus/per_patient_fold3_B_D_K_G.csv",
+      "md5": "36c3dbd9543b1e3c091039d277e0a86a",
+      "octets": 4300482,
+      "modifie_le": "2026-08-21T19:50:44",
+      "lignes_utiles": 2151
+    },
+    {
+      "fichier": "outputs/consensus/per_patient_fold4_B_D_K_G.csv",
+      "md5": "3b21a902e3e38d2e9b80d66495608128",
+      "octets": 4288624,
+      "modifie_le": "2026-08-21T21:55:40",
+      "lignes_utiles": 2151
+    }
+  ],
+  "note": "Comptes patient-level des légendes des Figures 3-5 du manuscrit. Régime `clean` (nettoyage de composantes connexes officiel BraTS-2023) : en régime `raw` les mêmes comptes valent K 421 / B 347 / D 427 — le manuscrit cite le régime clean, comme toute son évaluation officielle."
+}
