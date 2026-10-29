@@ -19,10 +19,10 @@ abstract: >-
   (EN + FR with both PDFs), the reproducibility code, the exact result JSONs,
   tables, figures, the dataset-provenance artefacts and the references.
 type: dataset
-version: v2.6
-date-released: "2026-09-22"
+version: v2.7
+date-released: "2026-10-29"
 license: CC-BY-4.0
-doi: 10.5281/zenodo.22906446
+doi: 10.5281/zenodo.22906447
 authors:
   - family-names: Cassez
     given-names: Guillaume
@@ -34,9 +34,6 @@ authors:
     affiliation: Independent researcher
     email: stanislaslarnier@gmail.com
 identifiers:
-  - type: doi
-    value: 10.5281/zenodo.22906446
-    description: Concept DOI (resolves to every version)
   - type: doi
     value: 10.5281/zenodo.22906447
     description: Version DOI of this exact revision
@@ -76,4 +73,4 @@ preferred-citation:
     (DistMap / signed-distance auxiliary loss) studies the recall end of the
     same recall-precision axis; its Zenodo concept DOI is
     10.5281/zenodo.19695263.
-  doi: 10.5281/zenodo.22906446
+  doi: 10.5281/zenodo.22906447

@@ -3,7 +3,7 @@
 **Reproducibility archive** · BRATS auxiliary-loss program · **v2.6** (2026-09-22) · CC-BY-4.0
 
 > Guillaume Cassez (ORCID 0009-0007-0987-3931) · Stanislas Larnier — Independent research.
-> **Zenodo** — concept DOI [10.5281/zenodo.22906446](https://doi.org/10.5281/zenodo.22906446) (resolves to the latest version) · version DOI [10.5281/zenodo.22906447](https://doi.org/10.5281/zenodo.22906447) · v2.6, 2026-09-22.
+> **Zenodo** — DOI de version [10.5281/zenodo.22906447](https://doi.org/10.5281/zenodo.22906447) · v2.6, 2026-09-22 (le DOI de concept apparaît sur la page du record dès sa publication).
 
 ## What this is
 
@@ -178,7 +178,7 @@ This paper cites Paper 1 by name 13 times, including the CC(D∩B) consensus fig
 
 ## How to cite
 
-Cite this record by its Zenodo concept DOI [10.5281/zenodo.22906446](https://doi.org/10.5281/zenodo.22906446), which resolves to the latest version, or by the version DOI [10.5281/zenodo.22906447](https://doi.org/10.5281/zenodo.22906447) for exactly this revision (v2.6, 2026-09-22). Full metadata in `CITATION.cff`.
+Cite this record by its Zenodo DOI [10.5281/zenodo.22906447](https://doi.org/10.5281/zenodo.22906447) (v2.6, 2026-09-22). Full metadata in `CITATION.cff`.
 
 ## License
 
